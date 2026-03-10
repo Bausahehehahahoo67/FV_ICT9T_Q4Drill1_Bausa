@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4 Drill 1</title>
+    <style>
+        .deez{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: mexican pink;
+        }
+
+        body{
+            background-color: steelblue;
+
+        }
+
+
+    </style>
 </head>
 <body>
+    <div class="deez" id="deez">
       <h1>Power Usage</h1>
       <div id="form-box">
         <input type="text" class="form-control" id="kWh" placeholder="Enter your electricity usage in kWh.">
         <button class="btn btn-info" onclick="checkElectricityUsage()">Check Electricity Usage</button>
       </div>
+    </div>
 
       <script>
         function checkElectricityUsage() {
