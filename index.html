@@ -6,14 +6,15 @@
     <title>Q4 Drill 1</title>
 </head>
 <body>
-      <h1>JavaScript Conditional Statements</h1>
-
-      <input type="text" class="form-control" id="number of years" placeholder="Enter your number of years of existence.">
-      <button class="btn btn-info" onclick="checkAge()">Check Age</button>
+      <h1>Power Usage</h1>
+      <div id="form-box">
+        <input type="text" class="form-control" id="kWh" placeholder="Enter your electricity usage in kWh.">
+        <button class="btn btn-info" onclick="checkElectricityUsage()">Check Electricity Usage</button>
+      </div>
 
       <script>
-        function checkAge() {
-            var kWh = document.getElementById("number of years").value
+        function checkElectricityUsage() {
+            var kWh = document.getElementById("kWh").value
             let cat1 = "Lifeline Consumer";
             if (isNaN(kWh) || (kWh < 0)) {
                 alert("Please enter something we can actually comprehend >:(")
@@ -33,11 +34,8 @@
             else if(kWh > 500) {
                 alert("You are a Heavy electricity Consumer!")
             }
-            else if(kWh > 500){
-                alert("You are a major, do NOT do something to minors!")
-            }
             else{
-                alert("You're biological specimen makes the detector unable to determine you age, please give up in trying.")
+                alert("The data you have entered is currently invalid.")
             }
             
 
